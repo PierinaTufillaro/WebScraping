@@ -21,7 +21,7 @@
 ### Keywords 
    - **POST /keywords** Returns some statistics about the keywords of the webpage. 
    It includes:
-      How many keywords has the title.
+      The amount of keywords that the title has.
       Which of the keywords are unique.
       The frequency of the keywords.
  
