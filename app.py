@@ -1,8 +1,5 @@
 from flask import Flask, jsonify, request 
 
-#Para abrir las paginas
-from mechanize import Browser
-
 #Para encontrar los meta
 import requests
 from bs4 import BeautifulSoup
@@ -100,7 +97,7 @@ def csv_reader(file_obj):
 	print ("ok")
 
 if __name__ == '__main__':
-#	csv_path = 'sample_urls.csv'
-#	with open(csv_path, "rb") as f_obj:
-#		csv_reader(codecs.iterdecode(f_obj, 'utf-8'))
+	csv_path = 'sample_urls.csv'
+	with open(csv_path, "rb") as f_obj:
+		csv_reader(codecs.iterdecode(f_obj, 'utf-8'))
 	app.run(debug=True, port=5000)
