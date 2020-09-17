@@ -27,7 +27,7 @@
  
 ## :mag_right: Bonus
   The API has a function that returns the title of a list of webpages. Those must be stored in a `.csv` file
-  and file must be in the same place as `app.py`.
-  You have to open the terminal, go to the API directory. Then place the `.csv` file and delete the 
+  which must be in the same place as `app.py`.
+  You need to open the terminal and go to the API directory. Then place the `.csv` file and delete the 
   pound key which are in the 3 last lines of the code. And run `python3 app.py`. 
   It's amazing :yum:!
