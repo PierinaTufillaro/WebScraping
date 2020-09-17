@@ -35,16 +35,18 @@ def uniqueKeywords(klist):
 	return len(result)
 
 
-@app.route('/keywords')
+@app.route('/keywords', methods=['POST'])
 def keywords():
+	req_Json = request.get_json() 
+	page = req_Json['page']
 	data = {}
 	try:
-		res = requests.get('https://www.paginasamarillas.com.co/servicios/laboratorio-clinico-elizabeth-parra-de-carvajal').text
+		res = requests.get(page).text
 		soup = BeautifulSoup(res, "html.parser")
 		title = soup.find('title').string
 		meta_list= soup.find_all('meta',{'name':'keywords'})
 		if not meta_list:
-			meta_list= soup.find_all('meta',{'name':'keywords'})
+			meta_list= soup.find_all('meta',{'name':'keyword'})
 		if meta_list:
 			for a in meta_list:
 				content = a.get('content')
@@ -68,9 +70,9 @@ def keywords():
 @app.route('/title', methods=['POST'])
 def title():
 	req_Json = request.get_json() 
-	name = req_Json['name']
+	page = req_Json['page']
 	try:
-		res = requests.get(name).text
+		res = requests.get(page).text
 		soup = BeautifulSoup(res, "html.parser")
 		title = soup.find('title').string
 		if not title:
