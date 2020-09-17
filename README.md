@@ -1,5 +1,5 @@
 # :mag_right: WebScraping :mag_right:
-   API is created to scrap titles of urls. Also, you can search the keywords of the pages and get some statics about them. 
+   API is created to scrap titles of urls. Also, you can search the keywords of the pages and get some statistics about them. 
    
 ## :mag_right: Requirements
 
@@ -19,7 +19,7 @@
    - **POST /title** Returns the title of the webpage. If an exception occurs, you will be informed.
 
 ### Keywords 
-   - **POST /keywords** Returns some statics about the keywords of the webpage. 
+   - **POST /keywords** Returns some statistics about the keywords of the webpage. 
    It includes:
       How many keywords has the title.
       Which of the keywords are unique.
