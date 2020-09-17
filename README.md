@@ -34,6 +34,7 @@
    - Put the url: 'http://localhost:5000/title' .
    - Then choose the 'POST' mode.
    - After that, go to body and select raw and then JSON as format.
+   - Write 'page' as key, and the url as it's value.
    - Push send button!
  
 ## :mag_right: Bonus
