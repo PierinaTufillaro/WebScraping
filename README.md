@@ -10,6 +10,7 @@
 
 1. Open a terminal
 2. Go to de API directory.
+3. Install with `pip3` all the libraries.
 3. Run `python3 app.py` to start the web server
 4. Enjoy it :wink:!
 
